@@ -1,16 +1,9 @@
 {
-  "version": 2,
+  "version": 3,
   "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/node"
-    }
+    { "src": "remix.config.js", "use": "@vercel/remix" }
   ],
-  "buildCommand": "npm run setup && npm run build",
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/build/index.js"
-    }
+    { "src": "/(.*)", "dest": "/" }
   ]
 }
