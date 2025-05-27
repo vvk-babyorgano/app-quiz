@@ -1,0 +1,36 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "53dd56f536be10a0f794529b157524f3"
+name = "Quiz App"
+handle = "quiz-app-87"
+application_url = "https://giants-nut-nervous-packard.trycloudflare.com"
+embedded = true
+
+[build]
+include_config_on_deploy = true
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2025-04"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/scopes_update" ]
+  uri = "/webhooks/app/scopes_update"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://giants-nut-nervous-packard.trycloudflare.com/auth/callback",
+  "https://giants-nut-nervous-packard.trycloudflare.com/auth/shopify/callback",
+  "https://giants-nut-nervous-packard.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
