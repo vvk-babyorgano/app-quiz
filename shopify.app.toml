@@ -3,7 +3,7 @@
 client_id = "53dd56f536be10a0f794529b157524f3"
 name = "Quiz App"
 handle = "quiz-app-87"
-application_url = "https://giants-nut-nervous-packard.trycloudflare.com"
+application_url = "https://prayer-wild-starting-indonesia.trycloudflare.com"
 embedded = true
 
 [build]
@@ -27,9 +27,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://giants-nut-nervous-packard.trycloudflare.com/auth/callback",
-  "https://giants-nut-nervous-packard.trycloudflare.com/auth/shopify/callback",
-  "https://giants-nut-nervous-packard.trycloudflare.com/api/auth/callback"
+  "https://prayer-wild-starting-indonesia.trycloudflare.com/auth/callback",
+  "https://prayer-wild-starting-indonesia.trycloudflare.com/auth/shopify/callback",
+  "https://prayer-wild-starting-indonesia.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
